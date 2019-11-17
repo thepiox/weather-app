@@ -23,8 +23,7 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "yarn pretty",
-			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+			"pre-commit": "yarn pretty"
 		}
 	},
 	"dependencies": {
