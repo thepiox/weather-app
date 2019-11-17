@@ -1,6 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import WeatherLocation from './WeatherLocation';
+import './styles.css';
 
 const LocationList = ({ cities, onSelectLocation }) => {
 	const handleWeatherLocationClick = (city) => {
@@ -13,7 +14,7 @@ const LocationList = ({ cities, onSelectLocation }) => {
 		));
 	};
 
-	return <Fragment>{weatherLocationItem(cities)}</Fragment>;
+	return <div className="location-list">{weatherLocationItem(cities)}</div>;
 };
 
 LocationList.prototype = {
