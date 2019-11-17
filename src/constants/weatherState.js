@@ -1,15 +1,8 @@
 const CLOUD = 'cloud';
-const CLOUDY = 'cloudy';
-const SUN = 'sun';
+const SUN = 'day-sunny';
 const RAIN = 'rain';
 const SNOW = 'snow';
-const WINDY = 'windy';
+const THUNDER = 'day-thunderstorm';
+const DRIZZEL = 'day-showers';
 
-export {
-	CLOUD,
-	CLOUDY,
-	SUN,
-	RAIN,
-	SNOW,
-	WINDY,
-}
+export { CLOUD, SUN, RAIN, SNOW, THUNDER, DRIZZEL };

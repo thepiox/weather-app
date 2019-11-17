@@ -1,15 +1,16 @@
-import { getTemperature, getWeatherState } from './'
+import { getTemperature, getWeatherState } from './';
 
 const getWeatherData = (weatherReponse) => {
 	const {
 		main: { humidity, temp },
 		wind: { speed },
+		weather,
 	} = weatherReponse;
 
 	const data = {
 		humidity,
 		temperature: getTemperature(temp),
-		weatherState: getWeatherState(),
+		weatherState: getWeatherState(weather[0].id),
 		wind: `${speed} m/s`,
 	};
 
