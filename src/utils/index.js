@@ -1,9 +1,5 @@
-import getTemperature from './getTemperature'
-import getWeatherData from './getWeatherData'
-import getWeatherState from './getWeatherState'
+import getTemperature from './getTemperature';
+import getWeatherData from './getWeatherData';
+import getWeatherState from './getWeatherState';
 
-export {
-	getTemperature,
-	getWeatherData,
-	getWeatherState,
-}
+export { getTemperature, getWeatherData, getWeatherState };

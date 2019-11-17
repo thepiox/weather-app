@@ -43,7 +43,7 @@ export default class WeatherLocation extends Component {
 	};
 
 	render() {
-		const { onWeatherLocationClick } = this.props
+		const { onWeatherLocationClick } = this.props;
 		const { city, data } = this.state;
 
 		return (

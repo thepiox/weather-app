@@ -6,10 +6,8 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
-	},
-	"eslintConfig": {
-		"extends": "react-app"
+		"eject": "react-scripts eject",
+		"pretty": "prettier --write \"./**/*.{js,jsx,json}\""
 	},
 	"browserslist": {
 		"production": [
@@ -22,6 +20,12 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn pretty",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
 	},
 	"dependencies": {
 		"@material-ui/core": "^4.5.2",
@@ -36,7 +40,7 @@
 	},
 	"devDependencies": {
 		"eslint": "^6.6.0",
-		"prettier": "^1.19.1",
-		"standard": "^14.3.1"
+		"husky": "^3.0.9",
+		"prettier": "^1.19.1"
 	}
 }
