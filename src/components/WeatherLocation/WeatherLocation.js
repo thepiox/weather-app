@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Proptypes from 'prop-types';
 import { CircularProgress } from '@material-ui/core';
-import { getWeather, getURLByCity } from '../../services';
 import Location from './Location';
-import WeatherData from './WeatherData';
+import WeatherData from './WeatherData/WeatherData';
+import { getWeather, getURLWeatherByCity } from '../../services';
 import { getWeatherData } from '../../utils';
 import './styles.css';
 
@@ -28,7 +28,7 @@ export default class WeatherLocation extends Component {
 	}
 
 	handleClick = () => {
-		const URL = getURLByCity(this.props.city);
+		const URL = getURLWeatherByCity(this.props.city);
 
 		getWeather(URL)
 			.then((response) => {

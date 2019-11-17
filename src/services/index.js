@@ -1,4 +1,6 @@
 import getWeather from './getWeather';
-import getURLByCity from './getURLByCity';
+import getForecast from './getForecast';
+import getURLWeatherByCity from './getURLWeatherByCity';
+import getURLForecastByCity from './getURLForecastByCity';
 
-export { getWeather, getURLByCity };
+export { getWeather, getForecast, getURLWeatherByCity, getURLForecastByCity };
