@@ -1,5 +1,3 @@
-import getTemperature from './getTemperature';
-import getWeatherData from './getWeatherData';
-import getWeatherState from './getWeatherState';
+import { getWeatherData, getForecastData } from './common';
 
-export { getTemperature, getWeatherData, getWeatherState };
+export { getWeatherData, getForecastData };

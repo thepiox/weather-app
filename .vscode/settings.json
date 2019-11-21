@@ -1,0 +1,44 @@
+{
+	"window.zoomLevel": -1,
+	"editor.minimap.enabled": false,
+	"workbench.editor.enablePreview": false,
+	"editor.fontSize": 13,
+	"explorer.confirmDragAndDrop": false,
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.suggestSelection": "first",
+	"editor.insertSpaces": false,
+	"breadcrumbs.enabled": false,
+	"editor.renderControlCharacters": false,
+	"workbench.activityBar.visible": true,
+	"editor.tabSize": 2,
+	"files.insertFinalNewline": true,
+	"javascript.format.semicolons": "insert",
+	"typescript.format.semicolons": "insert",
+	"editor.wordWrapColumn": 120,
+	"javascript.autoClosingTags": false,
+	"typescript.autoClosingTags": false,
+	"prettier.arrowParens": "always",
+	"prettier.printWidth": 120,
+	"prettier.endOfLine": "crlf",
+	"files.eol": "\r\n",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"prettier.useTabs": true,
+	"files.associations": {
+		"*.js": "javascriptreact"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"workbench.colorTheme": "One Dark Pro",
+	"prettier.singleQuote": true,
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.renderWhitespace": "boundary"
+}

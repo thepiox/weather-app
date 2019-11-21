@@ -2,3 +2,16 @@
 	text-align: center;
 	padding: 15px 0px;
 }
+
+.forecast__container {
+	height: 85vh;
+	width: calc(100% - 40px);
+	overflow: auto;
+	padding: 0 20px;
+}
+
+@media (max-width: 64em) {
+	.forecast__container {
+		height: 40vh;
+	}
+}

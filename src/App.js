@@ -42,7 +42,7 @@ export default class App extends Component {
 								<ForecastExtended city={city} />
 							) : (
 								<div>
-									<h2 className="forecast-title">No se ha selecciondo ninguna ciudad</h2>
+									<h2 className="forecast-title">No se ha seleccionado ninguna ciudad</h2>
 								</div>
 							)}
 						</Paper>
