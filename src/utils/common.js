@@ -21,13 +21,25 @@ const getTemperature = (kelvinTemperature) =>
 	);
 
 const getWeatherState = (weatherState) => {
-	if (weatherState < 300) return THUNDER;
-	if (weatherState < 400) return DRIZZEL;
-	if (weatherState < 600) return RAIN;
-	if (weatherState < 700) return SNOW;
-	if (weatherState === 800) return SUN;
+	switch (weatherState) {
+		case 300:
+			return THUNDER;
 
-	return CLOUD;
+		case 400:
+			return DRIZZEL;
+
+		case 600:
+			return RAIN;
+
+		case 700:
+			return SNOW;
+
+		case 800:
+			return SUN;
+
+		default:
+			return CLOUD;
+	}
 };
 
 const getWeatherData = (weatherReponse) => {

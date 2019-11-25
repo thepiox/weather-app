@@ -1,3 +1,3 @@
-import { getForecast, getWeather } from './weatherAPI';
+import { retrieveForecastData, getWeather } from './weatherAPI';
 
-export { getWeather, getForecast };
+export { getWeather, retrieveForecastData };
