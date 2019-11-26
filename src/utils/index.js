@@ -1,3 +1,3 @@
-import { getWeatherData, getForecastData } from './common';
+import { retrieveWeatherData, retrieveForecastData } from './common';
 
-export { getWeatherData, getForecastData };
+export { retrieveWeatherData, retrieveForecastData };

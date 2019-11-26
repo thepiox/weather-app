@@ -42,7 +42,7 @@ const getWeatherState = (weatherState) => {
 	}
 };
 
-const getWeatherData = (weatherReponse) => {
+const retrieveWeatherData = (weatherReponse) => {
 	const {
 		main: { humidity, temp },
 		wind: { speed },
@@ -59,7 +59,7 @@ const getWeatherData = (weatherReponse) => {
 	return data;
 };
 
-const getForecastData = (forecastReponse) => {
+const retrieveForecastData = (forecastReponse) => {
 	if (Array.isArray(forecastReponse) && forecastReponse.length > 0) {
 		return [];
 	}
@@ -78,8 +78,8 @@ const getForecastData = (forecastReponse) => {
 			id: GUID(),
 			weekDay: moment.unix(itemList.dt).format('dddd'),
 			hour: moment.unix(itemList.dt).hour(),
-			data: getWeatherData(itemList),
+			data: retrieveWeatherData(itemList),
 		}));
 };
 
-export { getWeatherData, getForecastData };
+export { retrieveWeatherData, retrieveForecastData };
